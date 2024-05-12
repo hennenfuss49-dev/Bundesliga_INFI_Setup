@@ -39,9 +39,9 @@ create table Person(
     FunktionsID int not null
 );
 
-drop table if exists Vereinsfuntion;
+drop table if exists Vereinsfunktion;
 
-create table Vereinsfuntion(
+create table Vereinsfunktion(
     FunktionsID int primary key,
     Bezeichnung varchar(60) not null unique
 );
@@ -173,7 +173,7 @@ alter table Aufgestellt add constraint FK_KaderID foreign key (KaderID)
     REFERENCES Mannschaftskader(KaderID);
 
 alter table Person add constraint FK_FunktionsID1 FOREIGN KEY (FunktionsID)
-    REFERENCES Vereinsfuntion(FunktionsID);
+    REFERENCES Vereinsfunktion(FunktionsID);
 
 alter table Mannschaftskader add constraint FK_PersonenID foreign key (PersonenID)
     REFERENCES Person(PersonenID);
