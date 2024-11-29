@@ -171,5 +171,7 @@ INSERT INTO Strafe (SpielID, KaderID, Zeitpunkt, KartenID) VALUES
     (8, 9, '2024-05-13 15:15:00', 2),
     (9, 10, '2024-05-14 15:30:00', 3),
     (10, 6, '2024-05-15 15:45:00', 2);
+INSERT INTO Strafe (SpielID, KaderID, Zeitpunkt, KartenID) VALUES
+    (10, 5, '2024-05-15 15:45:00', 2);
 
 # drop database bundesliga;
